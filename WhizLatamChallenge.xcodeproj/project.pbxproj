@@ -16,6 +16,7 @@
 		F81FCB0729FF3CE20039C076 /* CompanyInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = F81FCB0629FF3CE20039C076 /* CompanyInfo.swift */; };
 		F81FCB0929FF3E6E0039C076 /* CompanyRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F81FCB0829FF3E6E0039C076 /* CompanyRequest.swift */; };
 		F81FCB0B29FFFD380039C076 /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F81FCB0A29FFFD380039C076 /* ContentViewModel.swift */; };
+		F84CEC6D2A019D90001ED513 /* LaunchesInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = F84CEC6C2A019D90001ED513 /* LaunchesInfo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,7 @@
 		F81FCB0629FF3CE20039C076 /* CompanyInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanyInfo.swift; sourceTree = "<group>"; };
 		F81FCB0829FF3E6E0039C076 /* CompanyRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanyRequest.swift; sourceTree = "<group>"; };
 		F81FCB0A29FFFD380039C076 /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
+		F84CEC6C2A019D90001ED513 /* LaunchesInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchesInfo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +88,7 @@
 				F81FCB0129FF33430039C076 /* DataModelLaunchers.swift */,
 				F81FCB0329FF35760039C076 /* DataModelCompany.swift */,
 				F81FCB0629FF3CE20039C076 /* CompanyInfo.swift */,
+				F84CEC6C2A019D90001ED513 /* LaunchesInfo.swift */,
 			);
 			path = DataModels;
 			sourceTree = "<group>";
@@ -164,6 +167,7 @@
 				F81FCB0729FF3CE20039C076 /* CompanyInfo.swift in Sources */,
 				F81FCAF629FEB0B60039C076 /* ContentView.swift in Sources */,
 				F81FCB0B29FFFD380039C076 /* ContentViewModel.swift in Sources */,
+				F84CEC6D2A019D90001ED513 /* LaunchesInfo.swift in Sources */,
 				F81FCB0929FF3E6E0039C076 /* CompanyRequest.swift in Sources */,
 				F81FCAF429FEB0B60039C076 /* WhizLatamChallengeApp.swift in Sources */,
 				F81FCB0429FF35760039C076 /* DataModelCompany.swift in Sources */,

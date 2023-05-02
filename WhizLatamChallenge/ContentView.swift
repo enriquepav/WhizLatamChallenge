@@ -21,6 +21,8 @@ struct ContentView: View {
                 """)
             Spacer()
             Text("LAUNCHES")
+            Spacer()
+            
             
             
             
