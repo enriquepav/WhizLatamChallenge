@@ -11,6 +11,11 @@
 		F81FCAF629FEB0B60039C076 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F81FCAF529FEB0B60039C076 /* ContentView.swift */; };
 		F81FCAF829FEB0B80039C076 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F81FCAF729FEB0B80039C076 /* Assets.xcassets */; };
 		F81FCAFB29FEB0B80039C076 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F81FCAFA29FEB0B80039C076 /* Preview Assets.xcassets */; };
+		F81FCB0229FF33430039C076 /* DataModelLaunchers.swift in Sources */ = {isa = PBXBuildFile; fileRef = F81FCB0129FF33430039C076 /* DataModelLaunchers.swift */; };
+		F81FCB0429FF35760039C076 /* DataModelCompany.swift in Sources */ = {isa = PBXBuildFile; fileRef = F81FCB0329FF35760039C076 /* DataModelCompany.swift */; };
+		F81FCB0729FF3CE20039C076 /* CompanyInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = F81FCB0629FF3CE20039C076 /* CompanyInfo.swift */; };
+		F81FCB0929FF3E6E0039C076 /* CompanyRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F81FCB0829FF3E6E0039C076 /* CompanyRequest.swift */; };
+		F81FCB0B29FFFD380039C076 /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F81FCB0A29FFFD380039C076 /* ContentViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +24,11 @@
 		F81FCAF529FEB0B60039C076 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		F81FCAF729FEB0B80039C076 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F81FCAFA29FEB0B80039C076 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		F81FCB0129FF33430039C076 /* DataModelLaunchers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModelLaunchers.swift; sourceTree = "<group>"; };
+		F81FCB0329FF35760039C076 /* DataModelCompany.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModelCompany.swift; sourceTree = "<group>"; };
+		F81FCB0629FF3CE20039C076 /* CompanyInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanyInfo.swift; sourceTree = "<group>"; };
+		F81FCB0829FF3E6E0039C076 /* CompanyRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanyRequest.swift; sourceTree = "<group>"; };
+		F81FCB0A29FFFD380039C076 /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +61,11 @@
 		F81FCAF229FEB0B60039C076 /* WhizLatamChallenge */ = {
 			isa = PBXGroup;
 			children = (
+				F81FCB0529FF39BF0039C076 /* DataModels */,
 				F81FCAF329FEB0B60039C076 /* WhizLatamChallengeApp.swift */,
+				F81FCB0829FF3E6E0039C076 /* CompanyRequest.swift */,
 				F81FCAF529FEB0B60039C076 /* ContentView.swift */,
+				F81FCB0A29FFFD380039C076 /* ContentViewModel.swift */,
 				F81FCAF729FEB0B80039C076 /* Assets.xcassets */,
 				F81FCAF929FEB0B80039C076 /* Preview Content */,
 			);
@@ -65,6 +78,16 @@
 				F81FCAFA29FEB0B80039C076 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		F81FCB0529FF39BF0039C076 /* DataModels */ = {
+			isa = PBXGroup;
+			children = (
+				F81FCB0129FF33430039C076 /* DataModelLaunchers.swift */,
+				F81FCB0329FF35760039C076 /* DataModelCompany.swift */,
+				F81FCB0629FF3CE20039C076 /* CompanyInfo.swift */,
+			);
+			path = DataModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +160,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F81FCB0229FF33430039C076 /* DataModelLaunchers.swift in Sources */,
+				F81FCB0729FF3CE20039C076 /* CompanyInfo.swift in Sources */,
 				F81FCAF629FEB0B60039C076 /* ContentView.swift in Sources */,
+				F81FCB0B29FFFD380039C076 /* ContentViewModel.swift in Sources */,
+				F81FCB0929FF3E6E0039C076 /* CompanyRequest.swift in Sources */,
 				F81FCAF429FEB0B60039C076 /* WhizLatamChallengeApp.swift in Sources */,
+				F81FCB0429FF35760039C076 /* DataModelCompany.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
