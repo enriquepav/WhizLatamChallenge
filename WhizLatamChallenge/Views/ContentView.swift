@@ -22,6 +22,9 @@ struct ContentView: View {
             Spacer()
             Text("LAUNCHES")
             Spacer()
+            List {
+                LauncherView()
+            }
             
             
             
