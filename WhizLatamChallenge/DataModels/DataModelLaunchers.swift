@@ -5,24 +5,19 @@
 
 import Foundation
 
-// MARK: - Missions
-struct Missions: Codable {
+// MARK: - Launches
+struct Launches: Decodable {
     let launches: [Launch]
 }
 
 // MARK: - Launch
-struct Launch: Codable {
+struct Launch: Decodable {
     let id, missionName, date, time: String
     let rocketName, rocketType: String
     let successful: Bool
 
     enum CodingKeys: String, CodingKey {
-        case id
-        case missionName = "mission_name"
-        case date, time
-        case rocketName = "rocket_name"
-        case rocketType = "rocket_type"
-        case successful
+        case id, missionName, date, time, rocketName, rocketType, successful
     }
 }
 

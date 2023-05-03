@@ -11,6 +11,7 @@ final class ContentViewModel: ObservableObject {
     
     @Published var company = CompanyRequest().company
     
-    @Published var launches = LaunchesRequest().launches
+    @Published var launches = LaunchesRequest().getLaunches()
+    
     
 }

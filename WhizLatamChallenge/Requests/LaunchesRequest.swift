@@ -9,5 +9,19 @@ import Foundation
 
 class LaunchesRequest: ObservableObject {
     
-    var launches = try? JSONDecoder().decode(Launch.self, from: dataLaunches)
+    func getLaunches() -> Launches {
+        var launches : Launches? = nil
+        do {
+            
+            launches = try JSONDecoder().decode(Launches.self, from: dataLaunches)
+        }
+        catch {
+            // Couldn't create audio player object, log the error
+            print("Error al decodificar la lista de lanzamientos: \(error)")
+        }
+        print(launches!)
+        return launches!
+    }
+    
+//    var launches = try? JSONDecoder().decode(Launches.self, from: dataLaunches)
 }

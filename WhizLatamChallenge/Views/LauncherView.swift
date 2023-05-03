@@ -9,8 +9,7 @@ import SwiftUI
 
 struct LauncherView: View {
     
-//    var launch: Missions
-    
+    var launches = ContentViewModel().launches
     
     var body: some View {
         HStack(alignment: .center) {
