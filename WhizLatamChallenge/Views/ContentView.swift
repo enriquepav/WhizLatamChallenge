@@ -15,6 +15,8 @@ struct ContentView: View {
     
     var body: some View {
         VStack {
+            Text("SPACE X")
+            Spacer()
             HStack {
                 Spacer()
                 Text("COMPANY")
@@ -22,8 +24,8 @@ struct ContentView: View {
                 Button(action: {
                    isPresented = true
                 }) {
-                    Image(systemName: "globe")
-                        .foregroundColor(.blue)
+                    Image(systemName: "line.horizontal.3.decrease.circle")
+                        .foregroundColor(.white)
                         .imageScale(.large)
                 }
             }.sheet(isPresented: $isPresented, onDismiss: {
@@ -31,14 +33,18 @@ struct ContentView: View {
                companySelected.loadMissions()
                 
             }, content: { FiltersView()
-            })
+            }).background(Color.gray).padding(10)
             
             Spacer()
             Text("""
                 \(companySelected.company?.companyName ?? "NoCompany") was founded by \(companySelected.company?.founderName ?? "NoCompany") in \(companySelected.company?.year ?? 1800). It was how \(companySelected.company?.employees ?? 100) employees, \(companySelected.company?.launchSites ?? "NoCompany") launch sites, and is valued at USD \(companySelected.company?.valuation ?? 10000).
                 """)
             Spacer()
-            Text("LAUNCHES")
+            HStack {
+                Spacer()
+                Text("LAUNCHES")
+                Spacer()
+            }.background(Color.gray).padding(10)
             Spacer()
             LauncherView()
             
