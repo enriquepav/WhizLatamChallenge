@@ -23,19 +23,6 @@ class LaunchesRequest {
     }
     
 }
-//
-//    func decodeLaunches(from dataLaunches: Data) throws -> [Launch] {
-//        let decoder = JSONDecoder()
-//        var missions:[Launch] = []
-//
-//        do {
-//            missions = try decoder.decode([Launch].self, from: launchesData)
-//            print(missions)
-//        } catch {
-//            print("Error: \(error.localizedDescription)")
-//        }
-//
-//        return missions
-//    }
+
     
 

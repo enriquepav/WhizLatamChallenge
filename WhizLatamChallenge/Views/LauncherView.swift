@@ -45,12 +45,12 @@ struct LauncherView: View {
                 selectedMission = mission
                 isPresented = true
                 
-            }
-        }.sheet(isPresented: $isPresented, onDismiss: {isPresented = false}, content: {
-            Text("Articulo de lanzamiento \(selectedMission?.rocketName ?? "")")
-            Text("ver Wikipedia \(selectedMission?.id ?? "")")
-            Text("ver video")
-        })
+            }.sheet(isPresented: $isPresented, onDismiss: {isPresented = false}, content: {
+                Text("Articulo de lanzamiento \(selectedMission?.rocketName ?? "")")
+                Text("ver Wikipedia \(selectedMission?.id ?? "")")
+                Text("ver video")
+            })
+        }
     }
     func daysCalculate(dateMission: String) -> Int {
         let dateString = dateMission

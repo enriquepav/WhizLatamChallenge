@@ -10,11 +10,29 @@ import SwiftUI
 struct ContentView: View {
     
     @ObservedObject var companySelected = ContentViewModel()
+    @State var isPresented: Bool = false
     
     
     var body: some View {
         VStack {
-            Text("COMPANY")
+            HStack {
+                Spacer()
+                Text("COMPANY")
+                Spacer()
+                Button(action: {
+                   isPresented = true
+                }) {
+                    Image(systemName: "globe")
+                        .foregroundColor(.blue)
+                        .imageScale(.large)
+                }
+            }.sheet(isPresented: $isPresented, onDismiss: {
+                isPresented = false
+               companySelected.loadMissions()
+                
+            }, content: { FiltersView()
+            })
+            
             Spacer()
             Text("""
                 \(companySelected.company?.companyName ?? "NoCompany") was founded by \(companySelected.company?.founderName ?? "NoCompany") in \(companySelected.company?.year ?? 1800). It was how \(companySelected.company?.employees ?? 100) employees, \(companySelected.company?.launchSites ?? "NoCompany") launch sites, and is valued at USD \(companySelected.company?.valuation ?? 10000).

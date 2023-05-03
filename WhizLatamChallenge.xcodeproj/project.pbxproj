@@ -20,6 +20,7 @@
 		F84CEC6F2A01B329001ED513 /* LaunchesRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F84CEC6E2A01B329001ED513 /* LaunchesRequest.swift */; };
 		F84CEC712A01C66B001ED513 /* LauncherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F84CEC702A01C66B001ED513 /* LauncherView.swift */; };
 		F84CEC752A02C697001ED513 /* FiltersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F84CEC742A02C697001ED513 /* FiltersView.swift */; };
+		F84CEC772A030CAE001ED513 /* FilterManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F84CEC762A030CAE001ED513 /* FilterManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +38,7 @@
 		F84CEC6E2A01B329001ED513 /* LaunchesRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchesRequest.swift; sourceTree = "<group>"; };
 		F84CEC702A01C66B001ED513 /* LauncherView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LauncherView.swift; sourceTree = "<group>"; };
 		F84CEC742A02C697001ED513 /* FiltersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FiltersView.swift; sourceTree = "<group>"; };
+		F84CEC762A030CAE001ED513 /* FilterManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +76,7 @@
 				F84CEC722A01C716001ED513 /* Requests */,
 				F84CEC732A01C72D001ED513 /* Views */,
 				F81FCB0A29FFFD380039C076 /* ContentViewModel.swift */,
+				F84CEC762A030CAE001ED513 /* FilterManager.swift */,
 				F81FCAF729FEB0B80039C076 /* Assets.xcassets */,
 				F81FCAF929FEB0B80039C076 /* Preview Content */,
 			);
@@ -199,6 +202,7 @@
 				F81FCB0929FF3E6E0039C076 /* CompanyRequest.swift in Sources */,
 				F81FCAF429FEB0B60039C076 /* WhizLatamChallengeApp.swift in Sources */,
 				F81FCB0429FF35760039C076 /* DataModelCompany.swift in Sources */,
+				F84CEC772A030CAE001ED513 /* FilterManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

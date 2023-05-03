@@ -9,11 +9,11 @@ import SwiftUI
 
 struct FiltersView: View {
     
-    @State var isChecked1 = true
-    @State var isChecked2 = true
+    @State var isChecked1 = FilterManager.sharedInstance.filterSuccessful
+    @State var isChecked2 = FilterManager.sharedInstance.filterFailure
     
-    @State private var minValue = 1900.0
-    @State private var maxValue = 2500.0
+    @State private var minValue = FilterManager.sharedInstance.minYear
+    @State private var maxValue = FilterManager.sharedInstance.maxYear
     
     var body: some View {
         VStack {
@@ -50,6 +50,12 @@ struct FiltersView: View {
             } else {
                 Text("Not checked.")
             }
+           
+        }.onDisappear {
+            FilterManager.sharedInstance.minYear = minValue
+            FilterManager.sharedInstance.maxYear = maxValue
+            FilterManager.sharedInstance.filterSuccessful = isChecked1
+            FilterManager.sharedInstance.filterFailure = isChecked2
         }
     }
 }

@@ -14,6 +14,17 @@ struct Launch: Codable {
     let rocketName: String
     let rocketType: String
     let successful: Bool
+    var year: Int {
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "yyyy-MM-dd"
+        if let date = dateFormatter.date(from: date) {
+            let yearFormatter = DateFormatter()
+            yearFormatter.dateFormat = "yyyy"
+            let yearString = yearFormatter.string(from: date)
+            return Int(yearString) ?? 0 
+        }
+        return 0
+    }
 
     enum CodingKeys: String, CodingKey {
         case id
