@@ -19,6 +19,7 @@
 		F84CEC6D2A019D90001ED513 /* LaunchesInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = F84CEC6C2A019D90001ED513 /* LaunchesInfo.swift */; };
 		F84CEC6F2A01B329001ED513 /* LaunchesRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F84CEC6E2A01B329001ED513 /* LaunchesRequest.swift */; };
 		F84CEC712A01C66B001ED513 /* LauncherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F84CEC702A01C66B001ED513 /* LauncherView.swift */; };
+		F84CEC752A02C697001ED513 /* FiltersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F84CEC742A02C697001ED513 /* FiltersView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,7 @@
 		F84CEC6C2A019D90001ED513 /* LaunchesInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchesInfo.swift; sourceTree = "<group>"; };
 		F84CEC6E2A01B329001ED513 /* LaunchesRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchesRequest.swift; sourceTree = "<group>"; };
 		F84CEC702A01C66B001ED513 /* LauncherView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LauncherView.swift; sourceTree = "<group>"; };
+		F84CEC742A02C697001ED513 /* FiltersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FiltersView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +113,7 @@
 			children = (
 				F81FCAF529FEB0B60039C076 /* ContentView.swift */,
 				F84CEC702A01C66B001ED513 /* LauncherView.swift */,
+				F84CEC742A02C697001ED513 /* FiltersView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -189,6 +192,7 @@
 				F81FCB0229FF33430039C076 /* DataModelLaunchers.swift in Sources */,
 				F84CEC712A01C66B001ED513 /* LauncherView.swift in Sources */,
 				F81FCB0729FF3CE20039C076 /* CompanyInfo.swift in Sources */,
+				F84CEC752A02C697001ED513 /* FiltersView.swift in Sources */,
 				F81FCAF629FEB0B60039C076 /* ContentView.swift in Sources */,
 				F81FCB0B29FFFD380039C076 /* ContentViewModel.swift in Sources */,
 				F84CEC6D2A019D90001ED513 /* LaunchesInfo.swift in Sources */,

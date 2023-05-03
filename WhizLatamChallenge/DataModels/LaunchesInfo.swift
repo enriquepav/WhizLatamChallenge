@@ -14,7 +14,7 @@ let jsonString = """
        "mission_name": "Seven Waters",
        "date": "1991-09-14",
        "time": "20:57:13",
-       "rocket_name": "Going Merry Go",
+       "rocket_name": "Going Merry",
        "rocket_type": "Falcon 1",
        "successful": true
     },

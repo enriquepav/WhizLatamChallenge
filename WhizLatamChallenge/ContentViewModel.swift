@@ -18,12 +18,6 @@ final class ContentViewModel: ObservableObject {
     }
 
     func loadMissions() {
-        let decoder = JSONDecoder()
-        do {
-            self.missions = try decoder.decode([Launch].self, from: launchesData)
-            print(missions)
-        } catch {
-            print("Error decoding JSON: \(error.localizedDescription)")
-        }
+        self.missions = LaunchesRequest().loadMissions()
     }
 }
