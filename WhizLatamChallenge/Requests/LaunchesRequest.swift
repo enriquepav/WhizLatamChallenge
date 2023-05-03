@@ -9,19 +9,20 @@ import Foundation
 
 class LaunchesRequest: ObservableObject {
     
-    func getLaunches() -> Launches {
-        var launches : Launches? = nil
-        do {
-            
-            launches = try JSONDecoder().decode(Launches.self, from: dataLaunches)
         }
-        catch {
-            // Couldn't create audio player object, log the error
-            print("Error al decodificar la lista de lanzamientos: \(error)")
-        }
-        print(launches!)
-        return launches!
-    }
+//
+//    func decodeLaunches(from dataLaunches: Data) throws -> [Launch] {
+//        let decoder = JSONDecoder()
+//        var missions:[Launch] = []
+//
+//        do {
+//            missions = try decoder.decode([Launch].self, from: launchesData)
+//            print(missions)
+//        } catch {
+//            print("Error: \(error.localizedDescription)")
+//        }
+//
+//        return missions
+//    }
     
-//    var launches = try? JSONDecoder().decode(Launches.self, from: dataLaunches)
-}
+

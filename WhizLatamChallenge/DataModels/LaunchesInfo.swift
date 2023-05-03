@@ -7,72 +7,57 @@
 
 import Foundation
 
-let dataLaunches = """
-{
-  "launches": [
-       {
-           "id": "001",
-           "missionName": "Seven Waters",
-           "date": "14-09-1991",
-           "time": "20:57:13",
-           "rocketName": "Going Merry Go",
-           "rocketType": "Falcon 1",
-           "successful": true
-       },
-       {
-           "id": "002",
-           "missionName": "Ways to the moon",
-           "date": "26-01-1993",
-           "time": "10:12:09",
-           "rocketName": "Abensur",
-           "rocketType": "Falcon 1",
-           "successful": false
-       }
-   ]
-}
-""".data(using: .utf8)!
+let jsonString = """
+[
+    {
+       "id": "001",
+       "mission_name": "Seven Waters",
+       "date": "1991-09-14",
+       "time": "20:57:13",
+       "rocket_name": "Going Merry Go",
+       "rocket_type": "Falcon 1",
+       "successful": true
+    },
+    {
+       "id": "002",
+       "mission_name": "Ways to the moon",
+       "date": "1994-01-26",
+       "time": "10:12:09",
+       "rocket_name": "Abensur",
+       "rocket_type": "Falcon 1",
+       "successful": false
+    },
+    {
+        "id": "003",
+        "mission_name": "East Blue",
+        "date": "2023-10-30",
+        "time": "10:12:09",
+        "rocket_name": "SakuraMaru",
+        "rocket_type": "Falcon 9",
+        "successful": false
+    }
+]
+"""
+
+let launchesData = jsonString.data(using: .utf8)!
 
 
 
-//"""
 //{
-//  "launches": [
-//       {
-//           "id": "001",
-//           "mission_name": "Seven Waters",
-//           "date": "14-09-1991",
-//           "time": "20:57:13",
-//           "rocket_name": "Going Merry Go",
-//           "rocket_type": "Falcon 1",
-//           "successful": true
-//       },
-//       {
-//           "id": "002",
-//           "mission_name": "Ways to the moon",
-//           "date": "26-01-1993",
-//           "time": "10:12:09",
-//           "rocket_name": "Abensur",
-//           "rocket_type": "Falcon 1",
-//           "successful": false
-//       },
-//       {
-//           "id": "003",
-//           "mission_name": "East Blue",
-//           "date": "27-09-1995",
-//           "time": "20:57:13",
-//           "rocket_name": "Meleoron",
-//           "rocket_type": "Falcon 9",
-//           "successful": true
-//       },
-//       {
-//           "id": "004",
-//           "mission_name": "MarineFord",
-//           "date": "28-04-2001",
-//           "time": "20:57:13",
-//           "rocket_name": "Thousand Sunny",
-//           "rocket_type": "Falcon Heavy",
-//           "successful": false
-//       }
-//   ]
+//"id": "004",
+//"mission_name": "MarineFord",
+//"date":2025-12-13",
+//"time": "10:12:09",
+//"rocket_name": "Dark Night",
+//"rocket_type": "Falcon Heavy",
+//"successful": true
+//},
+//{
+//"id": "005",
+//"mission_name": "Ways to the moon",
+//"date": "2000-02-28",
+//"time": "10:12:09",
+//"rocket_name": "Crew",
+//"rocket_type": "Falcon 9",
+//"successful": true
 //}
-//"""
